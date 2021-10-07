@@ -1,0 +1,371 @@
+@charset "utf-8";
+@import url("reset.css");
+
+/*component*/
+.clearfix::after{
+    content: "";
+    clear: both;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 89px;
+    padding: 30px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header h1{
+    width: 76px;
+    margin: 0 auto;
+}
+
+header h1 a{
+    display: block;
+}
+
+header .shopping-link{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5%; top: 50%;
+    transform: translateY(-50%);
+}
+
+header .shopping-link img{
+    width: 18px;
+}
+
+header .shopping-link .shopping-count{
+    background-color: #D01012;
+    border-radius: 50%;
+    display: block;
+    width: 14px; height: 14px;
+    position: absolute;
+    top: 0; right: -5px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 15px;
+    
+}
+
+/*tab bar*/
+.tab-bar{
+    width: 100%;
+    height: 84px;
+    overflow: hidden;
+    bottom: 0;
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.tab-bar ul li{
+    float: left;
+    box-sizing: border-box;
+    margin: 15px 8% 0 9%;
+}
+
+.tab-bar ul li:nth-child(2){
+    float: left;
+    box-sizing: border-box;
+    margin: 20px 8% 0 9%;
+}
+
+.tab-bar ul li a{
+    display: block;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.tab-bar ul li a img{
+    width: 18px;
+}
+
+/*contents*/
+.contents{
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/*main-content*/
+.contents .main-content ul{
+    overflow-x: scroll;
+    width: 1200px;
+    height: 410px;
+}
+
+.contents .main-content ul li{
+    float: left;
+    margin-right: 1%;
+}
+
+.contents .main-content ul li img{
+    width: 270px;
+    height: auto;
+}
+
+/*sec*/
+.sec{
+
+}
+
+.sec h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 60px 0 20px;
+}
+
+.sec h2 a{
+    display: block;
+}
+
+.sec h2 a img{
+    width: 12px; height: auto;
+    margin-bottom: 7px;
+}
+
+/*sec1*/
+.sec-1 .product-main img{
+    width: 290px; height: auto;
+}
+
+.sec-1 .product-list{
+    width: 1050px; height: 150px;
+    margin-top: 10px;
+    overflow-x: scroll;
+}
+
+.sec-1 .product-list li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.sec-1 .product-list li p{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.sec-1 .product-list li .sub-txt{
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.sec-1 .product-list li a{
+    display: block;
+}
+
+.sec-1 .product-list li a img{
+    width: 80px; height: auto;
+}
+
+/*sec2*/
+
+.sec-2 .tab-container .tab-menu li{
+    display: inline-block;
+    margin: 20px 22px 0 0;
+}
+
+.sec-2 .tab-container .tab-menu li:nth-child(4){
+    display: inline-block;
+    margin-right: 0;
+}
+
+.sec-2 .tab-container .tab-menu li:hover a{
+    color: #D01012;
+    font-weight: 500;
+}
+
+.sec-2 .tab-container .tab-menu li a{
+    display: block;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.sec-2 .tab-container .sec2-button{
+    position: relative;
+}
+
+.sec-2 .tab-container .sec2-button li a{
+    display: block;
+}
+
+.sec-2 .tab-container .sec2-button .button-l{
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+
+.sec-2 .tab-container .sec2-button .button-r{
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+
+.sec-2 .tab-container .tab-con img{
+    width: 240px; height: 240px;
+    margin: 20px 0 0 9%;
+    border-radius: 50%;
+}
+
+.sec-2 .tab-container .tab-con p{
+    margin-top: 15px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.sec-2 .tab-container .tab-con .sub-txt{
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.sec-2 .product-banner-box ul li{
+    position: relative;
+    margin-bottom: 5px;
+    
+}
+
+.sec-2 .product-banner-box ul li a{
+    display: block;
+    box-sizing: border-box;
+}
+
+.sec-2 .product-banner-box ul li a img{
+    width: 290px; height: auto;
+}
+
+.sec-2 .product-banner-box ul li a .product-txt-1{
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.sec-2 .product-banner-box ul li a .product-txt-2{
+    position: absolute;
+    top: 65px;
+    left: 30px;
+    font-size: 9px;
+    color: #fff;
+}
+
+.sec-2 .product-banner-box ul li a .product-txt-right-1{
+    position: absolute;
+    top: 45px;
+    right: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.sec-2 .product-banner-box ul li a .product-txt-right-2{
+    position: absolute;
+    top: 65px;
+    right: 30px;
+    font-size: 9px;
+    color: #fff;
+}
+
+/*sec3*/
+.sec-3 .tag-con li{
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.sec-3 .tag-con li a{
+    display: block;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 8px 12px;
+}
+
+.sec-3 .tag-con li.on a{
+    background-color: #d11817;
+    border: 1px solid #d11817;;
+    color: #fff;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 130px;
+    margin: 30px 0 84px 0;
+    background-color:#d11817;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-top .footer-logo{
+    float: left;
+    margin-left: 15px;
+}
+
+.footer-top .footer-logo img{
+    width: 100px; height: auto;
+}
+
+.footer-top .footer-link{
+    float: right;
+    margin-top: 20px;
+}
+
+.footer-top .footer-link a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-top .footer-link .korea{
+    position: absolute;
+    right: 15px;
+}
+
+.footer-top .footer-link .footer-sns{
+    width: 140px;
+    margin-top: 30px;
+}
+
+.footer-top .footer-link .footer-sns li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-top .footer-link .footer-sns li a{
+    display: block;
+}
+
+footer .footer-bottom li:nth-child(1){
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+footer .footer-bottom li:nth-child(2){
+    position: absolute;
+    right: 45%;
+    bottom: 15px;
+    
+}
+
+footer .footer-bottom li:nth-child(3){
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+footer .footer-bottom li a{
+    font-size: 12px;
+    color: #fff;
+}

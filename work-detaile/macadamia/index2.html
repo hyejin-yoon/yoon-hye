@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macadamia</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/common2.css">
+    <script src="https://kit.fontawesome.com/ea17f7ebfb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.single-item').slick(
+                {
+                    autoplay: true,
+                    dots: true,
+                    Infinity: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    adaptiveHeight: true,
+                }
+            );
+
+            $('.slick-container2').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                nextArrow: '.next2',
+                prevArrow: '.prev2'
+            });
+
+            $('.slick-container3').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                nextArrow: '.test-n',
+                prevArrow: '.test-p'
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1>
+                <a class="logo" href="./index2.html">
+                    <img src="./img/logo.png" alt="마카다미아로고">
+                </a>
+            </h1>
+            <div class="menu-gnb">
+                <ul>
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">제품</a></li>
+                    <li><a href="#">플레이스</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </div>
+            <div class="util-icon">
+                <ul>
+                    <li><a href="#"><img src="./img/ico_search.png" alt="돋보기"></a></li>
+                    <li><a href="#"><img src="./img/ico_more.png" alt="더보기"></a></li>
+                </ul>
+            </div>
+            <div class="util-link">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="main-banner">
+        <ul class="single-item">
+            <li><a href=""><img src="./img/main.jpg" alt="메인배너"></a></li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </section>
+    <section class="macadamia-contents">
+        <h2><span class="point-color">마카다미아</span>와 함께하면 이런게 달라요!</h2>
+        <p class="sub-txt">누구인지 알려주세요! 맞춤콘텐츠를 추천해 드릴게요.</p>
+        <div class="macadamia-guide left-on">
+            <div class="guide-left">
+                <div class="guide-list">
+                    <ul>
+                        <li>
+                            <a href="#"></a>
+                            <span class="ico">
+                                <img src="./img/yellow/ico_main5.png" alt="#">
+                            </span>
+                            <span class="txt">상담 / 매칭</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span class="ico">
+                                <img src="./img/yellow/ico_main2.png" alt="#">
+                            </span>
+                            <span class="txt">브랜드</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span class="ico">
+                                <img src="./img/yellow/ico_main3.png" alt="#">
+                            </span>
+                            <span class="txt">제품</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span class="ico">
+                                <img src="./img/yellow/ico_main4.png" alt="#">
+                            </span>
+                            <span class="txt">플레이스</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span class="ico">
+                                <img src="./img/yellow/ico_main38.png" alt="#">
+                            </span>
+                            <span class="txt">대교써밋 무료체험</span>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <span class="ico">
+                                <img src="./img/yellow/ico_main10.png" alt="#">
+                            </span>
+                            <span class="txt">비회원 결제조회</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guide-text"><a href="#">마카다미아는 처음이에요</a><span class="arrow"><i class="fas fa-arrow-left"></i></span></div>
+            </div>
+            <div class="guide-right">
+                <div class="guide-text"><a href="#">대교 학습회원/학부모예요</a><span class="arrow"><i class="fas fa-arrow-right"></i></span></div>
+                <div class="guide-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="ico">
+                                    <img src="./img/blue/ico_main7.png" alt="#">
+                                </span>
+                                <span class="txt">상담/매칭</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ico">
+                                    <img src="./img/blue/ico_main8.png" alt="#">
+                                </span>
+                                <span class="txt">학습결과</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ico">
+                                    <img src="./img/blue/ico_main9.png" alt="#">
+                                </span>
+                                <span class="txt">일정</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ico">
+                                    <img src="./img/blue/ico_main10.png" alt="#">
+                                </span>
+                                <span class="txt">청구서</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ico">
+                                    <img src="./img/blue/ico_main11.png" alt="#">
+                                </span>
+                                <span class="txt">브랜드/제품</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ico">
+                                    <img src="./img/blue/ico_main12.png" alt="#">
+                                </span>
+                                <span class="txt">눈높이학습관</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="macadamia-search">
+        <h2><span class="point-color">우리 아이에게 맞는 학습</span>을 찾고 계신가요?</h2>
+        <select>
+            <option>전체</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <span>이고</span>
+        <select>
+            <option>전체</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <span>을(를)</span>
+        <select>
+            <option>전체</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <span>배우고 싶어요!</span>
+        <button>제품 확인하기</button>
+    </section>
+    <section class="macadamia-pick">
+        <div class="inner">
+            <div class="pick-title">
+                <h2>Macadamia’s <br> Pick</h2>
+                <ul class="label-tag">
+                    <li><a href="#">#BOOX</a></li>
+                    <li><a href="#">#러닝센터</a></li>
+                    <li><a href="#">#써밋어휘력</a></li>
+                    <li><a href="#">#HSK</a></li>
+                    <li><a href="#">#스마트씽킹</a></li>
+                </ul>
+                <div class="pick-list-btn">
+                    <a class="prev prev2"><i class="fas fa-arrow-left"></i></a>
+                    <a class="next next2"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="pick-list">
+                <ul class="slick-container2">
+                    <li>
+                        <a href="#">
+                            <img src="./img/pick-1.jpg" alt="상상키즈">
+                            <p class="pick-tit">상상Kids</p>
+                            <p class="pick-sub-tit">스팀박스  2호 - 쑤욱쑤욱  꼬마 텃밭</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/pick-2.jpg" alt="대교써밋">
+                            <p class="pick-tit">대교써밋</p>
+                            <p class="pick-sub-tit">대교써밋 어휘력</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/pick-3.jpg" alt="솔루니">
+                            <p class="pick-tit">솔루니</p>
+                            <p class="pick-sub-tit">솔루니 스마트씽킹</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/pick-4.png" alt="드림멘토 상담센터">
+                            <p class="pick-tit">드림멘토 상담센터</p>
+                            <p class="pick-sub-tit">마이페이스</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="macadamia-brand">
+        <div class="inner">
+            <h2>브랜드로 제품을 찾으세요!</h2>
+            <div class="brand-list">
+                <button href="#" class="prev test-p"><i class="fas fa-arrow-left"></i></button>
+                <ul class="slick-container3">
+                    <li><a href="#"><img src="./img/logo/brand_logo1_on.png" alt="#"></a></li>
+                    <li><a href="#"><img src="./img/logo/brand_logo2_on.png" alt="#"></a></li>
+                    <li><a href="#"><img src="./img/logo/brand_logo3_on.png" alt="#"></a></li>
+                    <li><a href="#"><img src="./img/logo/brand_logo4_on.jpeg" alt="#"></a></li>
+                    <li><a href="#"><img src="./img/logo/brand_logo5_on.png" alt="#"></a></li>
+                </ul>
+                <button href="#" class="next test-n"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="macadamia-map">
+        <div class="inner">
+            <h2>근처 플레이스<a href="#" class="more">더보기</a></h2>
+            <div class="map">
+                <div id="daumRoughmapContainer1629907693083" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1629907693083",
+                        "key" : "27562",
+                        "mapWidth" : "1280",
+                        "mapHeight" : "550"
+                    }).render();
+                </script>
+            </div>
+        </div>
+    </section>
+    <section class="macadamia-center">
+        <div class="inner">
+                <h2>가까운 교육국/센터</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/센터1.jpg" alt="">
+                            <div class="text">
+                                <p class="list-tit">차이홍 관악스퀘어</p>
+                                <p class="list-sub-tit"><span>차이홍</span><span>1.4Km</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/센터2.jpg" alt="">
+                            <div class="text">
+                                <p class="list-tit">눈높이 신원 러닝센터</p>
+                                <p class="list-sub-tit"><span>차이홍</span><span>0.4Km</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/센터3.jpg" alt="">
+                            <div class="text">
+                                <p class="list-tit">솔루니신림조원교습소</p>
+                                <p class="list-sub-tit"><span>솔루니</span><span>2.3Km</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/센터4.jpg" alt="">
+                            <div class="text">
+                                <p class="list-tit">차이홍 관악 지점</p>
+                                <p class="list-sub-tit"><span>차이홍</span><span>1.4Km</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/센터5.jpg" alt="">
+                            <div class="text">
+                                <p class="list-tit">눈높이 난곡 러닝센터</p>
+                                <p class="list-sub-tit"><span>눈높이</span><span>1.4Km</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/센터6.jpg" alt="">
+                            <div class="text">
+                                <p class="list-tit">솔루니관악푸르지오홈스쿨</p>
+                                <p class="list-sub-tit"><span>솔루니</span><span>2.4Km</span></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="macadamia-event">
+            <div class="inner">
+                <h2>이벤트<a href="#" class="more">더보기</a></h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/이벤트1.jpg" alt="이벤트">
+                            <p class="list-tit">눈높이 학력진단 총괄평가 오픈 이벤트</p>
+                            <p class="list-sub-tit">2021.08.1 ~ 2021.08.31</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/이벤트2.jpg" alt="이벤트">
+                            <p class="list-tit">홈러닝 고객감사 이벤트</p>
+                            <p class="list-sub-tit">2021.08.1 ~ 2021.08.31</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/이벤트3.jpg" alt="이벤트">
+                            <p class="list-tit">21년 8월 고객만족도 조사 이벤트</p>
+                            <p class="list-sub-tit">2021.08.15 ~ 2021.08.31</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="community-banner">
+                <ul class="img-list">
+                    <li>
+                        <a href="#"><img src="#"></a>
+                    </li>
+                </ul>
+                <ul class="dot-list">
+                    <li><a href="#" class="active"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div> -->
+        </section>
+        <section class="macadamia-notice">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <p class="title">커뮤니티<a href="#" class="more">더보기</a></p>
+                        <ul class="list-group">
+                            <li>배송사 휴무로 인한 마카다미아 제품 구매 배송지연 안내(8/2~8/6)</li>
+                            <li>마카다미아 하계 휴가기간 서비스 이용안내 (7/29~8/9)</li>
+                            <li>[안내] 2021년 하계휴가 기간 고객만족센터 운영 안내</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="title">고객센터<a href="#" class="more">더보기</a></p>
+                        <ul class="tab-list">
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                        </ul>
+                        <input type="text" placeholder="대학 선생님 찾기"/>
+                    </li>
+                    <li>
+                        <p class="title">SNS</p>
+                        <ul class="sns-list">
+                            <li><a href="#"><img src="./img/facebook.png"></a></li>
+                            <li><a href="#"><img src="./img/youtube.png"></a></li>
+                            <li><a href="#"><img src="./img/insta.png"></a></li>
+                            <li><a href="#"><img src="./img/blog.png"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="inner footer-top">
+                <ul class="footer-menu">
+                    <li><a href="#">서비스소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이메일주소 무단수집거부</a></li>
+                    <li><a href="#">법적고지</a></li>
+                </ul>
+                <div class="family-site">
+                    <a>FAMILY SITE</a>
+                    <ul class="site-list">
+                        <li><a>눈높이</a></li>
+                        <li><a>눈높이아티맘</a></li>
+                        <li><a>차이홍중국어</a></li>
+                        <li><a>HSK시험센터</a></li>
+                        <li><a>솔루니</a></li>
+                        <li><a>톡앤큐</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="inner">
+                <div class="con-left">
+                    <h1>
+                        <a class="logo" href="./index.html">
+                            <img src="./img/logo_footer.png" alt="마카다미아로고">
+                        </a>
+                    </h1>
+                    <p>(주)대교</p>
+                    <ul>
+                        <li>서울시 관악구 보라매로 3길 23(보라매동 729-1)대교타워(주)대교</li>
+                        <li>대표이사:강호준</li>
+                        <li>사업자등록번호:112-81-41114</li>
+                        <li>통신판매신고번호:제2013-서울관악-0478호</li>
+                    </ul>
+                    <p class="copy">Copyright © 2020 DAEKYO. All Rights Reserved</p>
+                </div>
+                <div class="con-right">
+                    <p>고객만족센터</p>
+                    <p>080.223.0909</p>
+                    <p>운영시간:평일 09:00~18:00</p>
+                    <button>1:1문의</button>
+                </div>
+            </div>
+        </footer>
+</body>
+<script>
+    //패밀리사이트 버튼
+    $(document).ready(function(){
+        $('.family-site').click(function(){
+            $('.site-list').slideToggle();
+        });
+    });
+
+    //마카다미아 왼쪽 버튼
+    $(document).ready(function(){
+        $(".guide-left .arrow").click(function(){
+            $(".macadamia-guide").toggleClass("left-on");
+            $(".macadamia-guide").removeClass("right-on");
+        });
+    });
+    //마카다미아 오른쪽 버튼
+    $(document).ready(function(){
+        $(".guide-right .arrow").click(function(){
+            $(".macadamia-guide").toggleClass("right-on");
+            $(".macadamia-guide").removeClass("left-on");
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.main-banner').slick({
+        slidesToHhow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        });
+    });
+</script>
+</html>

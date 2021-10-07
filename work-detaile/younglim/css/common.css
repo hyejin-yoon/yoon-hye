@@ -1,0 +1,701 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+/*header영역*/
+header{
+    background-color: rgba(255,255,255,0);
+}
+
+.header-inner{
+    width: 1240px;
+    height: 70px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header-inner h1{
+    float: left;
+    padding-top: 20px;
+}
+
+.header-inner h1 a{
+    display: block;
+}
+
+.header-inner h1 a img{
+    width: 142px;
+    height: 30px;
+}
+
+.header-inner .menu-gnb{
+    float: left;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.header-inner .menu-gnb ul li{
+    display: inline-block;
+}
+
+.header-inner .menu-gnb ul li a{
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header-inner .util-icon{
+    float: right;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.header-inner .util-icon a{
+    width: 30px;
+    height: 30px;
+}
+
+.header-inner .util-icon a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/*메인영역*/
+.main-banner{
+    background-image: url(../img/main.jpg);
+    background-size: 1920px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1017px;
+    display: block;
+    margin-top: -70px;
+}
+
+.main-banner .main-txt{
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin: 35% 37%;
+}
+
+.main-banner .main-txt .title{
+    font-size: 66px;
+    color: #fff;
+    min-width: 500px;
+}
+
+.main-banner .main-txt .sub{
+    font-size: 16px;
+    color: #fff;
+    padding: 7px 0 32px 0;
+    line-height: 1.5;
+}
+
+.main-banner .main-txt .more{
+    width: 113px;
+    height: 36px;
+    border: solid 1px #fff;
+    background: none;
+}
+
+.main-banner .main-txt .more:hover{
+    width: 113px;
+    height: 36px;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.main-banner .main-txt .more a{
+    font-size: 14px;
+    color: #fff;
+}
+
+.main-banner .main-txt .more:hover a{
+    font-size: 14px;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.main-banner .main-txt .scroll{
+    padding-top: 120px;
+}
+
+/* .main-banner .main-txt .scroll::before{
+    content: "";
+    width: 1px;
+    height: 10px;
+    padding-top: 120px;
+    color: #fff;
+} */
+
+.main-banner .main-txt .scroll a{
+    font-size: 11px;
+    color: #fff;
+}
+
+.sub-banner{
+    width: 100%;
+    height: 748px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sub-banner .sub-banner-txt{
+    width: 1240px;
+    height: 106px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.sub-banner .sub-banner-txt p{
+    font-size: 24px;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.sub-banner .sub-banner-txt span{
+    font-size: 20px;
+    color: #333;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.sub-banner .sub-banner-img{
+    height: 584px;
+    margin: 50px 0 0 105px;
+    /* margin: 60px 0 0 186px; */
+    float: left;
+}
+
+.sub-banner .sub-banner-img .arrow img{
+    position: absolute;
+    width: 126px;
+    height: 126px;
+    top: 60%;
+    left: 2%;
+}
+
+.sub-banner .sub-banner-img ul li{
+    display: inline-block;
+}
+
+.sub-banner .sub-banner-img ul li a img{
+    width: 418px;
+    height: 582px;
+    margin-right: 32px;
+}
+
+.sub-banner .sub-banner-img ul li a p{
+    position: absolute;
+    font-size: 26px;
+    bottom: 26px;
+    padding-left: 26px;
+    color: #fff;
+}
+
+.modern-banner{
+    width: 100%;
+    height: 2302px;
+    overflow: hidden;
+    position: relative;
+}
+
+.modern-banner .modern-menu{
+    float: right;
+    margin: 250px 200px 0 0;
+    box-sizing: border-box;
+}
+
+.modern-banner .modern-menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.modern-banner .modern-menu ul li:nth-child(1){
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.modern-banner .modern-menu ul li a{
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+.modern-banner .modern-img{
+    width: 100%;
+    height: 2000px;
+    /* height: 2158px; */
+    position: absolute;
+    bottom: 0;
+    background-color: #ecebe7;
+    
+}
+
+.modern-banner .modern-img em{
+    position: absolute;
+    font-size: 120px;
+    /* font-weight: 300; */
+    color: #333;
+    letter-spacing: 85px;
+    left: 25%;
+    top: 50%;
+    z-index: 999;
+    
+}
+
+.modern-banner .modern-img ul li{
+    display: inline-block;
+}
+
+.modern-banner .modern-img .img-1{
+    position: absolute;
+    display: block;
+    width: 720px;
+    height: 900px;
+    left: 10%;
+    top: 7%;
+}
+
+.modern-banner .modern-img .img-2{
+    position: absolute;
+    display: block;
+    width: 420px;
+    height: 484px;
+    right: 20%;
+    top: 20%;
+}
+
+.modern-banner .modern-img .img-3{
+    position: absolute;
+    display: block;
+    width: 820px;
+    height: 528px;
+    bottom: 12%;
+    right: 25%;
+}
+
+.modern-banner .modern-img p{
+    position: absolute;
+    font-size: 21px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.5;
+    padding: 34px 30px 0 0;
+    bottom: 6%;
+    right: 26%;
+}
+
+.made-banner{
+    width: 100%;
+    height: 930px;
+    background-color: #f6f5f3;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.made-banner .made-inner{
+    width: 1240px;
+    height: 748px;
+    margin: 0 auto;
+}
+
+.made-banner .made-inner .made-banner-txt{
+    width: 1200px;
+    height: 136px;
+    text-align: center;
+}
+
+.made-banner .made-inner .made-banner-txt span{
+    font-size: 34px;
+    color: #333;
+    line-height: 34px;
+}
+
+.made-banner .made-inner .made-banner-txt p{
+    padding-top: 16px;
+    font-size: 16px;
+    color: #333;
+    font-weight:300;
+    line-height: 1.5;
+}
+
+.made-banner .made-inner .made-banner-txt button{
+    position: absolute;
+    left: 46%;
+    top: 200px;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-position: under;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.made-banner .made-inner .made-banner-txt iframe{
+    padding-top: 80px;
+}
+
+.product-banner{
+    width: 100%;
+    height: 265px;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.product-banner .product-inner{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.product-banner .product-inner p{
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+
+.product-banner .product-inner ul li{
+    float: left;
+    margin: 40px 0 0 60px;
+    text-align: center;
+}
+
+.product-banner .product-inner ul li a img{
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.designer-banner{
+    width: 100%;
+    height: 880px;
+    overflow: hidden;
+    position: relative;
+}
+
+.designer-banner .designer-inner{
+    width: 1240px;
+    height: 780px;
+    margin: 0 auto;
+}
+
+.designer-banner .designer-inner p{
+    margin-top: 40px;
+    font-size: 32px;
+    color: #333;
+}
+
+.designer-banner .designer-inner ul li{
+    float: right;
+    display: inline-block;
+    padding-right: 14px;
+    margin-top: -13px;
+}
+
+.designer-banner .designer-inner ul li a{
+    display: block;
+    font-size: 14px;
+}
+
+.designer-banner .designer-inner .designer-img img:nth-child(1){
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: 100px;
+}
+
+.designer-banner .designer-inner .designer-img img:nth-child(2){
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 65px;
+    right: 880px;
+}
+
+.designer-banner .designer-inner .designer-img img:nth-child(3){
+    position: absolute;
+    width: 514px;
+    height: 715px;
+    top: 100px;
+    right: 350px;
+}
+
+.time-banner{
+    width: 100%;
+    height: 851px;
+    background-image: url(../img/main-img-brand.jpg);
+}
+
+.time-banner .time-txt{
+    padding-top: 20%;
+    text-align: center;
+}
+
+.time-banner .time-txt p{
+    font-size: 34px;
+    color: #fff;
+}
+
+.time-banner .time-txt span{
+    display: block;
+    font-size: 14px;
+    padding: 13px 0 25px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.time-banner .time-txt button{
+    width: 113px;
+    height: 36px;
+    color: #fff;
+    border: solid 1px #fff;
+    background: none;
+    transition: all 0.3s;
+}
+
+.time-banner .time-txt button:hover{
+    width: 113px;
+    height: 36px;
+    color: #000;
+    border: solid 1px #fff;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.magazine-banner{
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    padding: 40px 0;
+    font-size: 30px;
+}
+
+.magazine-banner .magazine-inner{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.magazine-banner .magazine-inner p{
+    margin-top: 40px;
+    font-size: 32px;
+    color: #333;
+}
+
+.magazine-banner .magazine-inner span{
+    float: right;
+    display: block;
+    margin-top: -25px;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.magazine-banner .magazine-inner ul li{
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.magazine-banner .magazine-inner ul li a{
+    display: block;
+}
+
+.magazine-banner .magazine-inner ul li a img{
+    width: 396px;
+    margin-top: 28px;
+}
+
+.magazine-banner .magazine-inner ul li:nth-child(2){
+    margin: 0 2%;
+}
+
+.contact-banner{
+    width: 100%;
+    height: 686px;
+}
+
+.contact-banner .contact-inner{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.contact-banner .contact-inner p{
+    position: absolute;
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.contact-banner .contact-inner ul li{
+    display: inline-block;
+    margin: 100px 100px 0 0;
+    font-size: 32px;
+    padding-top: 20px;
+    color: #333;
+}
+
+.contact-banner .contact-inner ul li:nth-child(3){
+    margin: 100px 0 0 0;
+}
+
+.contact-banner .contact-inner ul li a img{
+    width: 340px;
+}
+
+.bottom-banner{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 720px;
+}
+.bottom-banner .bottom-inner{
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+/* .bottom-banner .bottom-inner .left-banner img{
+    float: left;
+    width: 594px;
+    height: 620px;
+    margin-right: 20px;
+} */
+
+.bottom-banner .bottom-inner .left-banner{
+    float: left;
+    width: 594px;
+    height: 620px;
+    margin-right: 20px;
+    background-image: url('../img/paint.jpg');
+}
+
+.bottom-banner .bottom-inner .left-banner p{
+    position: absolute;
+    left: 145px;
+    top: 300px;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+
+.bottom-banner .bottom-inner .left-banner .sub-txt{
+    position: absolute;
+    top: 350px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.bottom-banner  .bottom-inner .left-banner button{
+    position: absolute;
+    left: 220px;
+    bottom: 200px;
+    width: 142px;
+    height: 36px;
+    border: 1px solid #000;
+    background: none;
+}
+
+/* .bottom-banner .bottom-inner .right-banner img{
+    float: left;
+    width: 606px;
+    height: 620px;
+} */
+
+.bottom-banner .bottom-inner .right-banner{
+    float: left;
+    width: 606px;
+    height: 620px;
+    background-image: url('../img/mark.jpg');
+}
+
+.bottom-banner  .bottom-inner .right-banner p{
+    position: absolute;
+    right: 145px;
+    top: 300px;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+.bottom-banner .bottom-inner .right-banner .sub-txt{
+    position: absolute;
+    top: 350px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+.bottom-banner .bottom-inner .right-banner button{
+    width: 142px;
+    height: 36px;
+    border: 1px solid #000;
+    background: none;
+}
+
+.footer-banner{
+    overflow: hidden;
+    position: relative;
+    width: 1920px;
+    height: 375px;
+    background-color: #F6F5F3;
+}
+
+.footer-banner h2{
+    float: left;
+    padding: 40px 350px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.footer-banner .footer-menu{
+    float: right;
+    padding: 40px 260px 0 0;
+}
+
+.footer-banner .footer-menu ul{
+    display: inline-block;
+}
+
+.footer-banner .footer-menu ul li{
+    display: block;
+    margin-right: 100px;
+    color: #707070;
+    line-height: 2.5;
+}
+
+.footer-banner .footer-menu ul li a{
+    box-sizing: border-box;
+}
+
+.footer-banner .copyright{
+    position: absolute;
+    bottom: 0;
+    width: 1920px;
+    height: 80px;
+    background-color: #ECEBE6;
+}
+
+.footer-banner .copyright p{
+    position: absolute;
+    top: 35px;
+    left: 350px;
+    color: #707070;
+}
+
+.footer-banner .copyright span{
+    position: absolute;
+    top: 35px;
+    right: 360px;
+    color: #707070;
+}

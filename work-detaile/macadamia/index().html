@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <style>
+        *{padding: 0; margin: 0;}
+        header{height: 50px;}
+        section{height: 100vh;}
+        .sec1{background-color: #eee;}
+        .sec2{background-color: #eeaeae;}
+        .sec3{background-color: #cbffcb;}
+        .sec4{background-color: #94a4d7;}
+        .con-btn{position:fixed;top: 50%;right: 100px;}
+        footer{height: 100px;}
+    </style>
+</head>
+<body>
+    <header>
+        헤더영역
+    </header>
+    <div class="container">
+        <section class="sec sec1">1</section>
+        <section class="sec sec2">2</section>
+        <section class="sec sec3">3</section>
+        <section class="sec sec4">4</section>
+    </div>
+    <footer>푸터영역</footer>
+    <ul class="con-btn">
+        <li><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+        <li><a>4</a></li>
+    </ul>
+    <button class="top-btn">top</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function () {
+            var scrollValue = $(document).scrollTop();
+            console.log(scrollValue);
+            if (scrollValue >= 1000) {
+                //console.log('a');
+                $(".top-btn").addClass("on");
+            } else {
+                //console.log('a');
+                $(".top-btn").removeClass("on")
+            }
+        });
+
+        $('.top-btn').click(function(){
+            $("html").animate({scrollTop:0},1000,'easeInBack');
+        });
+
+        $('.con-btn li a').on("click",function(){
+            var idx = $(this).parent("li").index();
+            console.log(idx);
+            var offsetTop = $(".sec").eq(idx).offset().top;
+
+            $("html,body").animate({scrollTop:offsetTop},1000,"easeInBack");
+        });
+    });
+</script>
+</html>

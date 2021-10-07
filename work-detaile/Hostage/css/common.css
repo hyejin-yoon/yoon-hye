@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import url("./reset.css");
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+
+.cont{
+    width: 800px;
+    height: 5607px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(../img/인질.jpg);
+    overflow: hidden;
+}
+
+.cont .main-title{
+    position: absolute;
+    top: 1200px;
+    left: 50px;
+}
+
+.cont .main-title li:nth-child(1){
+    position: absolute;
+    left: -530px;
+    animation: mymove1 1s 2.5s ease-out forwards;
+}
+
+.cont .main-title li:nth-child(2){
+    position: absolute;
+    top: 100px;
+    left: -540px;
+    animation: mymove2 1s 3s ease-out forwards;
+}
+
+.cont .main-title li:nth-child(3){
+    position: absolute;
+    top: 800px;
+    left: 200px;
+    animation: mymove3 2s 4s ease-out forwards;    
+}
+/*애니메이션 효과*/
+@keyframes mymove1 {
+    from {left: 0px;}
+    to {left: 100px;}
+}
+
+@keyframes mymove2 {
+    from {left: 0px;}
+    to {left: 100px;}
+}
+
+@keyframes mymove3 {
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+
+.cont iframe{
+    position: absolute;
+    top: 3000px;
+    left: 100px;
+}
+
+.cont .still{
+    position: absolute;
+    bottom: 16%;
+}
+.cont .still li{
+    overflow: hidden;
+    width: 400px;
+    height: 266px;
+    margin: 15px 200px;
+}
+
+.cont .still li img{
+    transition: all 0.5s;
+}
+
+.cont .still li:hover img{
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+
+.cont button{
+    position: absolute;
+    bottom: 730px;
+    left: 300px;
+    width: 220px;
+    height: 60px;
+    background-color: #ffc700;
+    border: none;
+    outline: none;
+}
+.cont button p{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.cont button:hover{
+    position: absolute;
+    bottom: 730px;
+    left: 300px;
+    width: 220px;
+    height: 60px;
+    background-color: #000;
+    border: none;
+    outline: none;
+}
+.cont button:hover p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.cont .sub-title{
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 700px;
+    animation: slidein 0.5s infinite alternate;
+}
+
+/*애니메이션 효과*/
+@keyframes slidein{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}

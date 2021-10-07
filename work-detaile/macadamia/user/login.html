@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <header>
+            <div class="header-inner">
+                <h1>
+                    <a class="logo" href="./index.html">
+                        <img src="../img/logo.png" alt="마카다미아로고">
+                    </a>
+                </h1>
+                <div class="menu-gnb">
+                    <ul>
+                        <li><a href="#">브랜드</a></li>
+                        <li><a href="#">제품</a></li>
+                        <li><a href="#">플레이스</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                    <div class="util-link">
+                        <ul>
+                            <li><a>로그인</a></li>
+                            <li><a class="join">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <div class="util-icon">
+                        <a class="search"><img src="../img/ico_search.png" alt="돋보기"></a>
+                        <a class="more"><img src="../img/ico_more.png" alt="더보기"></a>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="subtitle-wrap">
+        <div class="inner">
+            <div class="sub-tit">
+                <a href="#"><img src="../img/로그인화살표png.png" alt="뒤로가기"></a>
+                <h2>로그인</h2>
+            </div>
+            <ul class="sub-location">
+                <li>
+                    <a href=../index.html">홈</a>
+                </li>
+                <li>
+                    <a href="./login.html">로그인</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="login-box">
+        <div class="logo"><img src="../img/로그인로그.png" alt="마카다미아로고"></div>
+        <div class="form-group login-id"><input type="text" placeholder="아이디"></div>
+        <div class="form-group"><input type="password" placeholder="비밀번호"></div>
+        <div class="checkbox"><input type="checkbox" id="saveid"><label for="saveid" class="check-txt">아이디 저장</label></div>
+        <div class="login-button"><button>로그인</button></div>
+        <ul>
+            <li>
+                <a href="#">아이디 찾기</a>
+                <a href="#">비밀번호 찾기</a>
+                <a href="join.html">회원가입</a>
+            </li>
+        </ul>
+    </div>
+</body>
+<style>
+        /*sub-title*/
+    .subtitle-wrap{
+        background-color: #efefef;
+        padding: 60px 0;
+        overflow: hidden;
+    }
+
+    .inner{
+        width: 1220px;
+        margin: 0 auto;
+    }
+    
+    .subtitle-wrap .sub-tit{ float: left;}
+    .subtitle-wrap .sub-tit a{display: inline-block; width: 46px; height: 46px;}
+    .subtitle-wrap .sub-tit a img{width: auto; height: auto; padding: 7px 0; box-sizing: border-box;}
+    .subtitle-wrap .sub-tit a {vertical-align: top;}
+    .subtitle-wrap .sub-tit h2{display: inline-block; font-size: 48px; color: #333; border-left: 1px solid #d1d1d1; padding-left: 24px;}
+    .subtitle-wrap .sub-location{float: right;}
+    .subtitle-wrap .sub-location li{display: inline-block; padding: 15px 0;}
+    .subtitle-wrap .sub-location li:nth-child(1)::after{content: ">";}
+    
+
+    /*login-box*/
+    .login-box{width: 440px; margin: 60px auto 0;}
+    .login-box .logo img{width: 100%;}
+    .login-box .form-group input{width: 100%; height: 43px; color: #333; border: 1px solid #bbb; padding: 8px 16px; box-sizing: border-box;}
+    .login-box .form-group.login-id{margin-bottom: 20px;}
+    .login-box .checkbox{margin: 20px 0;}
+    .login-box .checkbox label{display: inline-block; padding: 10px; cursor: pointer;}
+    .login-box .login-button{text-align: center; margin-top: 70px;}
+    .login-box .login-button button{width: 170px; height: 56px; border-radius: 40px; background-color: black; color: white; font-size: 18px;}
+    .login-box ul{text-align: center; margin-top: 30px;}
+    /* .login-box ul li{display: inline-block; margin: 0 10px; text-decoration: underline; color:#999;} */
+    .login-box ul li a{display: inline-block; margin: 0 10px; text-decoration: underline; color:#999;}
+</style>
+</html>

@@ -1,0 +1,167 @@
+@charset "utf-8";
+@import url("reset.css");
+
+/*공통*/
+section h2{margin-bottom: 30px; text-align: center; font-size: 48px; color: #333;}
+.point-color{color: #f4a100;}
+.inner{width: 1280px;margin: 0 auto;}
+.more{display: block;float: right;position: relative;text-indent: -9999em;overflow: hidden; width: 26px;margin: 11px;}
+.more:before{content: '';display: block;transform: translate(-50%,-50%);position: absolute;left: 50%;top: 50%;width: 100%;height:1px;background: #fff;}
+.more:after{content: '';display: block;transform: translate(-50%,-50%);position: absolute;left: 50%;top: 50%;width: 1px;height: 55%;background: #fff;}
+
+/*header 영역*/
+.header-inner{width: 1280px;margin: 0 auto;padding: 30px 0;overflow: hidden;}
+.header-inner h1{float: left;margin-right: 25px;}
+.header-inner h1 a{display: block;}
+.header-inner h1 a img{width: 160px; height: 30px;vertical-align: middle;}
+.header-inner .menu-gnb{float: left; height: 30px;padding: 6px 0;box-sizing: border-box;}
+.header-inner .menu-gnb ul li{display: inline-block;}
+.header-inner .menu-gnb ul li a{display: block;padding: 0 15px;font-weight: 500; font-size: 20px;}
+.header-inner .util-link{float: right; margin-right: 25px;}
+.header-inner .util-link ul li{display: inline-block;}
+.header-inner .util-link ul li:nth-child(1)::after{content: "ㅣ";}
+.header-inner .util-link ul li a{display: inline-block; height: 30px; padding: 9px 20px;box-sizing: border-box;font-size: 16px;}
+.header-inner .util-icon{float: right;}
+.header-inner .util-icon ul li{display: inline-block; width: 50px; height: 30px;}
+.header-inner .util-icon ul li a{display: block; padding: 5px 0;}
+.header-inner .util-icon ul li a img{vertical-align: middle;}
+
+/*메인배너 영역*/
+.main-banner ul li a{display: block;width: 100%;height: 680px;}
+.main-banner ul li a img{width: 100%; height: 680px;}
+
+/*마카다미아 가이드 영역*/
+.macadamia-contents{background: #f6f6f6; padding: 80px 0 0 ; text-align: center;}
+.macadamia-contents .sub-txt{margin-bottom: 50px;font-size: 24px;color: #7d7d7d;}
+.macadamia-contents .macadamia-guide{overflow: hidden;}
+.macadamia-contents .macadamia-guide > div{height: 260px;}
+.macadamia-contents .macadamia-guide > div > div:nth-child(1){float: left;}
+.macadamia-contents .macadamia-guide > div > div:nth-child(2){float: right;}
+.macadamia-contents .macadamia-guide .guide-left{background: #f4a100; float: left; width: 50%;}
+.macadamia-contents .macadamia-guide .guide-right{background: #008fd4; float: right; width: 50%;}
+.macadamia-contents .macadamia-guide .guide-text{position: relative; width: 400px;height: 100%;}
+.macadamia-contents .macadamia-guide .guide-text a{display: block; height: 100%;padding: 50px 0;box-sizing: border-box;font-size: 30px;color: #fff;}
+.macadamia-contents .macadamia-guide .guide-text span{display: block; width: 40px; height: 40px; border: 2px solid #fff; border-radius: 50%; box-sizing: border-box; font-size: 25px; cursor: pointer;}
+.macadamia-contents .macadamia-guide .guide-left .guide-text span{position: absolute; top: 50%; right: 70px; color: #fff; padding: 5px;}
+.macadamia-contents .macadamia-guide .guide-right .guide-text span{position: absolute; top: 50%; left: 70px; color: #fff; padding: 5px;}
+.macadamia-contents .macadamia-guide .guide-list{display: none; width: calc(100% - 400px);height: 260px; padding: 50px 30px; box-sizing: border-box;}
+.macadamia-contents .macadamia-guide .guide-list ul{width: 100%;height: 165px;white-space: nowrap;overflow-x: scroll;}
+.macadamia-contents .macadamia-guide .guide-list ul::-webkit-scrollbar{height: 5px;background: rgba(0, 0, 0, 0.24);border-radius: 6px; cursor: pointer;}
+.macadamia-contents .macadamia-guide .guide-list ul::-webkit-scrollbar-thumb{background: #393939;border-radius: 6px;}
+.macadamia-contents .macadamia-guide .guide-list ul li{display:inline-block;margin-right: 20px;}
+.macadamia-contents .macadamia-guide .guide-list ul li .ico{display: inline-block;width: 90px;height: 90px;background: url('../img/index.png') no-repeat center;}
+.macadamia-contents .macadamia-guide .guide-list ul li .txt{display:block;padding-top: 24px;font-size: 16px;color: #fff;}
+.macadamia-contents .macadamia-guide.left-on .guide-left .guide-list{display: block;}
+.macadamia-contents .macadamia-guide.left-on .guide-left{width: 70%;}
+.macadamia-contents .macadamia-guide.left-on .guide-right{width: 30%;}
+.macadamia-contents .macadamia-guide.right-on .guide-right .guide-list{display: block;}
+.macadamia-contents .macadamia-guide.right-on .guide-left{width: 30%;}
+.macadamia-contents .macadamia-guide.right-on .guide-right{width: 70%;}
+
+/*마카다미아 학습검색 영역*/
+.macadamia-search{background: #f6f6f6;padding: 80px 0;text-align: center;}
+.macadamia-search select{background: url('../img/ico_select2.png') no-repeat right 20px center;width: 160px;height: 45px;line-height: 45px;background-color: #fff;border: 1px solid #e1e1e1;border-radius: 30px;padding: 0 20px;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.macadamia-search span{display: inline-block;padding: 0 10px;}
+.macadamia-search button{border-radius: 30px;width: 160px;height: 45px;padding: 0 20px;text-align: left;color: #fff;background: #333 url('../img/ico_search4.png') no-repeat right 20px center;}
+
+/*마카다미아 픽*/
+.macadamia-pick{background: #615d63;padding: 80px 20px;overflow: hidden;position: relative;}
+.macadamia-pick .pick-title{float: left;width: 20%;}
+.macadamia-pick .pick-title h2{margin-bottom: 25px;text-align: left; color: #fff;}
+.macadamia-pick .pick-title .label-tag {margin-bottom: 25px;}
+.macadamia-pick .pick-title .label-tag li{display: inline-block;margin: 5px 5px 5px 0;background:#837466;border-radius: 30px;}
+.macadamia-pick .pick-title .label-tag li a{display: block;padding: 15px;color: #fff;}
+.macadamia-pick .pick-title .pick-list-btn a{display: inline-block;margin-right: 10px;width: 40px;height:40px;border: 2px solid #fff;border-radius: 50%;padding: 7px;box-sizing:border-box;font-size:23px;cursor: pointer;color: #fff;}
+.macadamia-pick .pick-list{float: right;width: 80%;padding: 0 0px;box-sizing:border-box;}
+.macadamia-pick .pick-list ul li{float: left;width: 33.333%;padding: 0 10px;box-sizing:border-box;}
+.macadamia-pick .pick-list ul li a{display: block;}
+.macadamia-pick .pick-list ul li a img{width: 100%;border-radius: 6px;}
+.macadamia-pick .pick-list ul li a .pick-tit{margin-top: 30px;color: #fff;}
+.macadamia-pick .pick-list ul li a .pick-sub-tit{margin-top: 10px;font-size: 20px;color: #fff;}
+
+/*마카다미아 브랜드*/
+.macadamia-brand{padding: 80px 0;overflow: hidden;}
+.macadamia-brand .brand-list{position: relative;width: 1080px;height: 180px;margin: 50px auto 0;}
+.macadamia-brand ul li{float: left;width: 20%;}
+.macadamia-brand ul li a{display: block;width: 180px;height: 180px;padding: 10px;margin: 0 auto;box-sizing: border-box;border: 1px solid #ccc;border-radius: 50%; overflow: hidden;}
+.macadamia-brand ul li a img{width: 100%;filter: grayscale(100%);}
+.macadamia-brand button{display: block !important;position: absolute;top: 50%;transform: translateY(-50%);background: transparent;border: none;padding: 10px;font-size: 30px;color: #ddd;}
+.macadamia-brand .prev{left:-80px;}
+.macadamia-brand .next{right:-80px;}
+
+/*마카다미아 지도*/
+.macadamia-map{position: relative;padding: 80px;margin-bottom: 250px;background: #7866a9;height: 350px;}
+.macadamia-map h2{overflow: hidden;text-align: left;color: #fff;}
+
+/*마카다미아 센터*/
+.macadamia-center{padding: 80px 0;}
+.macadamia-center h2{text-align: left;}
+.macadamia-center ul{overflow:hidden;}
+.macadamia-center ul li{float: left;width: 33.333%;padding: 20px 0;}
+.macadamia-center ul li:nth-child(-n+3){border-bottom: 1px solid #ddd;}
+.macadamia-center ul li a{display: block;}
+.macadamia-center ul li a img{float: left;width: 90px;height: 90px;border-radius: 6px;margin-right: 20px;}
+.macadamia-center ul li a .text{float: left;padding: 25px 0;}
+.macadamia-center ul li a .list-tit{margin-bottom: 12px;font-weight: 500;font-size: 20px;}
+.macadamia-center ul li a .list-sub-tit{font-size: 16px;color: #ddd;}
+.macadamia-center ul li a .list-sub-tit span{display: inline-block;}
+.macadamia-center ul li a .list-sub-tit span:nth-child(1):after{content: '|';display: inline-block;padding: 0 10px;}
+
+/*마카다미아 이벤트*/
+.macadamia-event{background: #efefef;overflow: hidden;padding: 80px 0;}
+.macadamia-event h2{text-align: left;}
+.macadamia-event h2 .more:before,
+.macadamia-event h2 .more:after{background: #333;}
+.macadamia-event ul li{float: left;width: 32%;}
+.macadamia-event ul li:nth-child(2){margin: 0 2%;}
+.macadamia-event ul li a{display: block;}
+.macadamia-event ul li a img{width:100%;}
+.macadamia-event ul li a .list-tit{margin-top: 14px;font-size: 20px;color: #333;}
+.macadamia-event ul li a .list-sub-tit{margin-top: 10px;font-size: 16px;color: #999;}
+
+/*마카다미아 커뮤니티*/
+.macadamia-notice{background: #f6f6f6;padding: 80px 0;overflow: hidden;}
+.macadamia-notice .more{width: 10px;height: 18px;margin: 0;}
+.macadamia-notice .more:before,
+.macadamia-notice .more:after{background: #333;}
+.macadamia-notice .inner > ul > li{float: left;width: 30%;}
+.macadamia-notice .inner > ul > li:nth-child(2){margin: 0 5%;}
+.macadamia-notice .inner > ul > li p{margin-bottom: 20px;font-weight: 500;font-size: 20px;}
+.macadamia-notice .inner > ul > li .list-group{list-style: disc;padding-left: 17px;}
+.macadamia-notice .inner > ul > li .list-group li{padding: 10px 0;line-height: 1.2;}
+.macadamia-notice .inner > ul > li .list-group li a{display: block;color: #555;}
+.macadamia-notice .inner > ul > li .tab-list li{display: inline-block;margin-right: 20px;margin-bottom: 30px;}
+.macadamia-notice .inner > ul > li .tab-list li a{display: block;padding: 3px;border-bottom: 1px solid #666;}
+.macadamia-notice .inner > ul > li input{display: block;background: #fff url(../img/ico_search2.png) no-repeat right 16px center;width: 100%;height: 43px;padding: 8px 16px;font-size: 14px;color: #333;border: 1px solid #bbb;border-radius: 20px;box-sizing: border-box;}
+.macadamia-notice .inner > ul > li .sns-list{background: #fff;border-radius: 8px;padding: 30px 15px;overflow: hidden;}
+.macadamia-notice .inner > ul > li .sns-list li{float: left;width: 25%;text-align: center;}
+
+/*footer*/
+footer{background: #616161;padding-bottom: 60px;}
+footer .inner:after{clear: both;content: '';display: block;}
+footer hr{height:1px;margin: 0;}
+footer .footer-top:after{clear: both;content: '';display: block;}
+footer .footer-menu{float: left;}
+footer .footer-menu li{display: inline-block;}
+footer .footer-menu li a{display: block;padding: 20px 0;font-size: 14px;color: #fff;}
+footer .footer-menu li a:after{content:'|';display: inline-block;padding: 0 20px;color: #999;}
+footer .footer-menu li:last-child a:after{content:'';}
+footer .family-site{float: right; position: relative;}
+footer .family-site a{display: block; background: #333;width: 309px;padding: 20px;font-size: 14px;color: #fff;}
+footer .family-site > a:after{content: '';display: block;width: 9px;height: 9px;position: absolute;top: 50%;right: 30px;border-bottom: 1px solid #fff;border-left: 1px solid #fff;margin-top: -8px;transform: scale(1,.9) rotate(-45deg);}
+footer .family-site .site-list{display: none; position: absolute; z-index: 999; bottom: 54px;}
+footer .family-site .site-list li:hover a{color: #FF5F00;}
+footer .family-site.site-on {display: block;}
+
+footer .con-left{float: left;margin-top: 30px;}
+footer .con-left h1{margin-bottom: 20px;}
+footer .con-left p{margin-bottom: 10px;font-size: 18px;color: #a0a0a0;}
+footer .con-left .copy{font-size: 14px;}
+footer .con-left ul{list-style: disc;margin-bottom: 20px;}
+footer .con-left ul li{padding: 5px 0;font-size: 14px;color: #a0a0a0;}
+footer .con-right{float: right;margin-top: 30px;width: 350px;position: relative;}
+footer .con-right p{margin-bottom: 10px;letter-spacing: -1px;font-weight: 300;font-size: 14px;color: #fff;}
+footer .con-right p:nth-child(2){margin-top: 20px;font-size: 35px;}
+footer .con-right button{display: block;background: transparent;width: 100px;height: 40px;color: #fff;border: 1px solid #fff;text-align: center;font-weight: 500;border-radius: 20px;position: absolute;right: 14px;bottom: 0;}
+footer .con-right button:after{content: '';width: 11px;height: 13px;display: inline-block;margin-left: 12px;background: url(../img/ico_arr_r_w.png) no-repeat center center;}
+
