@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>LEGO</title>
     <link rel="stylesheet" href="./css/common.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-container').slick({
+                autoplay: false,
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1.1,
+                adaptiveHeight: true,
+            });
+
+            $('.slick-container2').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                nextArrow: '.next2',
+                prevArrow: '.prev2'
+            });
+
+            $('.product-list').slick({
+                autoplay: false,
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3.3,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+            });
+
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -19,15 +56,15 @@
             <li><a href="#"><img src="./img/menu/my.svg" alt="마이페이지"><br>My</a></li>
         </ul>
     </div>
+    <div class="main-content">
+        <ul class="slick-container clearfix">
+            <li><img src="./img/home/Group 36@2x.png" alt="메인1"></li>
+            <li><img src="./img/home/Group 37@2x.png" alt="메인2"></li>
+            <li><img src="./img/home/Group 38@2x.png" alt="메인3"></li>
+            <li><img src="./img/home/21327_BI_08@2x.png" alt="메인4"></li>
+        </ul>
+    </div>
     <div class="contents">
-        <div class="main-content">
-            <ul class="clearfix">
-                <li><img src="./img/home/Group 36@2x.png" alt="메인1"></li>
-                <li><img src="./img/home/Group 37@2x.png" alt="메인2"></li>
-                <li><img src="./img/home/Group 38@2x.png" alt="메인3"></li>
-                <li><img src="./img/home/21327_BI_08@2x.png" alt="메인4"></li>
-            </ul>
-        </div>
         <div class="sec sec-1">
             <h2><a href="#">#BEST SELLER <img src="./img/button.svg" alt="버튼로고"></a></h2>
             <div class="product-main">
@@ -71,10 +108,10 @@
                     <li><a href="#">LIMITED </a></li>
                 </ul>
                 <ul class="sec2-button">
-                    <li><a class="button-l" href="#"><img src="./img/left.svg" alt="왼쪽 버튼"></a></li>
-                    <li><a class="button-r" href="#"><img src="./img/right.svg" alt="오른쪽 버튼"></a></li>
+                    <li><a class="prev2 button-l" href="#"><img src="./img/left.svg" alt="왼쪽 버튼"></a></li>
+                    <li><a class="next2 button-r" href="#"><img src="./img/right.svg" alt="오른쪽 버튼"></a></li>
                 </ul>
-                <ul class="tab-content">
+                <ul class="slick-container2 tab-content">
                     <li>
                         <div class="tab-con on">
                             <img src="./img/today-1.png" alt="신제품">
@@ -112,22 +149,28 @@
                     <li>
                         <a href="#">
                             <img src="./img/banner1.png" alt="배너1">
-                            <p class="product-txt-1">폭스바겐 T2</p>
-                            <p class="product-txt-2">219,900원</p>
+                            <div class="product-txt-con">
+                                <p class="product-txt-1">폭스바겐 T2</p>
+                                <p class="product-txt-2">219,900원</p>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="./img/banner2.png" alt="배너2">
-                            <p class="product-txt-right-1">다이애건 앨리™</p>
-                            <p class="product-txt-right-2">499,900원</p>
+                            <div class="product-txt-con">
+                                <p class="product-txt-1">다이애건 앨리™</p>
+                                <p class="product-txt-2">499,900원</p>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="./img/banner3.png" alt="배너3">
-                            <p class="product-txt-1">해리포터 호그와트™ 성</p>
-                            <p class="product-txt-2">640,000원</p>
+                            <div class="product-txt-con">
+                                <p class="product-txt-1">해리포터 호그와트™ 성</p>
+                                <p class="product-txt-2">640,000원</p>
+                            </div>
                         </a>
                     </li>
                 </ul>

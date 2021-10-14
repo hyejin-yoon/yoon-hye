@@ -60,7 +60,7 @@ header .shopping-link .shopping-count{
     bottom: 0;
     position: fixed;
     background-color: #fff;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .tab-bar ul li{
@@ -93,20 +93,28 @@ header .shopping-link .shopping-count{
     box-sizing: border-box;
 }
 
+.main-content{
+    overflow: hidden;
+}
+
 /*main-content*/
-.contents .main-content ul{
-    overflow-x: scroll;
-    width: 1200px;
-    height: 410px;
+/*.contents .main-content ul{*/
+/*    overflow-x: scroll;*/
+/*    width: 1200px;*/
+/*    height: 410px;*/
+/*}*/
+
+/*.contents .main-content ul li{*/
+/*    float: left;*/
+/*    margin-right: 1%;*/
+/*}*/
+
+.slick-container .slick-track{
+    left: 15px !important;
 }
 
-.contents .main-content ul li{
-    float: left;
-    margin-right: 1%;
-}
-
-.contents .main-content ul li img{
-    width: 270px;
+.main-content ul li img{
+    width: 90%;
     height: auto;
 }
 
@@ -132,13 +140,13 @@ header .shopping-link .shopping-count{
 
 /*sec1*/
 .sec-1 .product-main img{
-    width: 290px; height: auto;
+    width: 100%; height: auto;
 }
 
-.sec-1 .product-list{
+/* .sec-1 .product-list{
     width: 1050px; height: 150px;
     margin-top: 10px;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 }
 
 .sec-1 .product-list li{
@@ -168,6 +176,10 @@ header .shopping-link .shopping-count{
 }
 
 /*sec2*/
+.sec-2 .tab-container{
+    position: relative;
+    margin-bottom: 20px;
+}
 
 .sec-2 .tab-container .tab-menu li{
     display: inline-block;
@@ -191,29 +203,29 @@ header .shopping-link .shopping-count{
     font-weight: 400;
 }
 
-.sec-2 .tab-container .sec2-button{
-    position: relative;
-}
-
 .sec-2 .tab-container .sec2-button li a{
     display: block;
+    width: 50px; height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    text-align: center;
 }
 
 .sec-2 .tab-container .sec2-button .button-l{
-    position: absolute;
     left: 0;
-    top: 120px;
+    text-align: left;
 }
 
 .sec-2 .tab-container .sec2-button .button-r{
-    position: absolute;
     right: 0;
-    top: 120px;
+    text-align: right;
 }
 
 .sec-2 .tab-container .tab-con img{
-    width: 240px; height: 240px;
-    margin: 20px 0 0 9%;
+    width: 260px; height: 260px;
+    margin: 50px auto;
     border-radius: 50%;
 }
 
@@ -238,29 +250,36 @@ header .shopping-link .shopping-count{
 .sec-2 .product-banner-box ul li a{
     display: block;
     box-sizing: border-box;
+    position: relative;
 }
 
 .sec-2 .product-banner-box ul li a img{
-    width: 290px; height: auto;
+    width: 100%; height: auto;
+}
+
+.sec-2 .product-banner-box ul li:nth-child(2) a .product-txt-con{
+    left: inherit;
+    right: 5%; !important
+}
+
+.sec-2 .product-banner-box ul li a .product-txt-con{
+    position: absolute;
+    top: 50%; left: 5%;
+    transform: translateY(-50%);
 }
 
 .sec-2 .product-banner-box ul li a .product-txt-1{
-    position: absolute;
-    top: 45px;
-    left: 30px;
-    font-size: 14px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
     color: #fff;
 }
 
 .sec-2 .product-banner-box ul li a .product-txt-2{
-    position: absolute;
-    top: 65px;
-    left: 30px;
-    font-size: 9px;
+    font-size: 0.8rem;
     color: #fff;
 }
 
-.sec-2 .product-banner-box ul li a .product-txt-right-1{
+/* .sec-2 .product-banner-box ul li a .product-txt-right-1{
     position: absolute;
     top: 45px;
     right: 30px;
@@ -274,7 +293,7 @@ header .shopping-link .shopping-count{
     right: 30px;
     font-size: 9px;
     color: #fff;
-}
+} */
 
 /*sec3*/
 .sec-3 .tag-con li{
